@@ -23,7 +23,7 @@ class AboutMe extends React.Component {
         const styles = {
             border: "solid",
             borderColor: "darkgrey",
-            borderRadius: 25,
+            borderRadius: 0,
             width: "75%",
             marginLeft: "auto",
             marginRight: "auto",

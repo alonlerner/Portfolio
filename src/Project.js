@@ -28,7 +28,7 @@ class Project extends React.Component {
         const styles = {
             width: "75%",
             border: "solid darkgrey",
-            borderRadius: "25px",
+            borderRadius: "0",
             marginLeft: "auto",
             marginRight: "auto",
             height: 300,
@@ -42,7 +42,7 @@ class Project extends React.Component {
             <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
                 <tr>
                     <td className="project-td">
-                        <video height="180" controls style={{ padding: "2%" }}>
+                        <video height="20%" controls style={{ padding: "2%" }}>
                             <source src={this.state.videoUrl} type="video/mp4" />
                         </video>
                         <a href={this.state.codeUrl} title="Click to see the code" style={{ position: "relative", left: "40%" }}>
