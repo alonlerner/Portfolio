@@ -13,17 +13,17 @@ function ContactMe() {
                 <tr>
                     <td className="contact-me-td">
                         <a href="https://www.linkedin.com/in/alon-lerner-16586b19a/" title="Click to see my profile">
-                            <img src={LinkedIn} alt="LinkedIn logo" style={{ width: 100 }} />
+                            <img src={LinkedIn} alt="LinkedIn logo" style={{ width: "5rem" }} />
                         </a>
                     </td>
                     <td className="contact-me-td">
                         <a href="https://github.com/alonlerner" title="Click to see my profile">
-                            <img src={GitHub} alt="GitHub logo" style={{ width: 100 }} />
+                            <img src={GitHub} alt="GitHub logo" style={{ width: "5rem" }} />
                         </a>
                     </td>
                     <td className="contact-me-td">
                         <a href="mailto:lernera97@gmail.com" title="Click to email me">
-                            <img src={Email} alt="Email logo" style={{ width: 100 }} />
+                            <img src={Email} alt="Email logo" style={{ width: "5rem" }} />
                         </a>
                     </td>
                 </tr>

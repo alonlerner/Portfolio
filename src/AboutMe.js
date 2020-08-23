@@ -24,7 +24,7 @@ class AboutMe extends React.Component {
             border: "solid",
             borderColor: "darkgrey",
             borderRadius: 0,
-            width: "75%",
+            width: "90%",
             marginLeft: "auto",
             marginRight: "auto",
             marginBottom: 20,
