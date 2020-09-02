@@ -43,7 +43,7 @@ class Project extends React.Component {
                 <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
                     <tr>
                         <td className="project-td">
-                            <video height="100" controls style={{ padding: "2%" }}>
+                            <video height="180" controls style={{ padding: "2%" }}>
                                 <source src={this.state.videoUrl} type="video/mp4" />
                             </video>
                             <a href={this.state.codeUrl} title="Click to see the code" style={{ position: "relative", left: "40%" }}>

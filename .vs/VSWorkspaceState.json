@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\photos"
   ],
-  "SelectedNode": "\\src\\MyProjects.js",
+  "SelectedNode": "\\src\\Project.js",
   "PreviewInSolutionExplorer": false
 }
