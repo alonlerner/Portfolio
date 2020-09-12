@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8c4c3c0d5b4abd0d5a29df29ca2b6d7",
+    "revision": "1f08f5cd9e8d6e881c59edf1084254d3",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "537a12670028722f8fa2",
+    "revision": "098e66c92fb4ece7dc0a",
     "url": "/Portfolio/static/css/2.43079d8c.chunk.css"
   },
   {
-    "revision": "09636a0ba9431bd87d4c",
+    "revision": "c86025bb4426ef899c85",
     "url": "/Portfolio/static/css/main.87cef56f.chunk.css"
   },
   {
-    "revision": "537a12670028722f8fa2",
-    "url": "/Portfolio/static/js/2.9fcbd6ea.chunk.js"
+    "revision": "098e66c92fb4ece7dc0a",
+    "url": "/Portfolio/static/js/2.49c7b928.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/Portfolio/static/js/2.9fcbd6ea.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.49c7b928.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "09636a0ba9431bd87d4c",
-    "url": "/Portfolio/static/js/main.578b0cb8.chunk.js"
+    "revision": "c86025bb4426ef899c85",
+    "url": "/Portfolio/static/js/main.1b9f9ed4.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
@@ -42,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1b934228ead4c6138e7a7acd219c28ba",
     "url": "/Portfolio/static/media/SongsRecGame.1b934228.mp4"
+  },
+  {
+    "revision": "30c6d26097de5021a578cc879c5756d6",
+    "url": "/Portfolio/static/media/jdbc-company2.30c6d260.png"
   }
 ]);
