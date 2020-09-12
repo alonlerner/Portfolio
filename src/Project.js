@@ -24,6 +24,30 @@ class Project extends React.Component {
         this.setState({ mouseOver: false })
     }
 
+    handlePhotoD() {
+        console.log(this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim())
+        if (this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'g==') {
+            console.log('a')
+            return (
+                <table className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
+                    <tr>
+                        <td className="project-td">
+                            <a href="https://alonlerner.github.io/njit-trivia/">
+                                <img src={this.state.videoUrl} height="180" style={{ padding:"2%" }}/>
+                            </a>
+                            <a href={this.state.codeUrl} title="Click to see the code" style={{ position: "relative", left: "40%" }}>
+                                <img src={GitHub} alt="GitHub logo" style={{ width: 70 }} />
+                            </a>
+                        </td>
+                        <td>
+                            <p className="project-title"><strong><u>{this.state.title}</u></strong></p>
+                            <p className="project-explanation">{this.state.explanation}</p>
+                        </td>
+                    </tr>
+                </table>)
+        }
+    }
+
     render() {
         const styles = {
             width: "90%",
@@ -39,51 +63,101 @@ class Project extends React.Component {
             styles.backgroundColor = "#262626"
         }
         if (window.innerWidth > 900) {
-            return (
-                <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
-                    <tr>
-                        <td className="project-td">
-                            <video height="180" controls style={{ padding: "2%" }}>
-                                <source src={this.state.videoUrl} type="video/mp4" />
-                            </video>
-                            <a href={this.state.codeUrl} title="Click to see the code" style={{ position: "relative", left: "40%" }}>
-                                <img src={GitHub} alt="GitHub logo" style={{ width: 70 }} />
-                            </a>
-                        </td>
-                        <td>
-                            <p className="project-title"><strong><u>{this.state.title}</u></strong></p>
-                            <p className="project-explanation">{this.state.explanation}</p>
-                        </td>
-                    </tr>
-                </table>
-            )
+            if (this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'g==') {
+                return (
+                    <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
+                        <tr>
+                            <td className="project-td">
+                                <a href="https://alonlerner.github.io/njit-trivia/">
+                                    <img src={this.state.videoUrl} height="180" style={{ padding: "2%" }} />
+                                </a>
+                                <a href={this.state.codeUrl} title="Click to see the code" style={{ position: "relative", left: "40%" }}>
+                                    <img src={GitHub} alt="GitHub logo" style={{ width: 70 }} />
+                                </a>
+                            </td>
+                            <td>
+                                <p className="project-title"><strong><u>{this.state.title}</u></strong></p>
+                                <p className="project-explanation">{this.state.explanation}</p>
+                            </td>
+                        </tr>
+                    </table>)
+            }
+            else {
+                    return (
+                        <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
+                            <tr>
+                                <td className="project-td">
+                                    <video height="180" controls style={{ padding: "2%" }}>
+                                        <source src={this.state.videoUrl} type="video/mp4" />
+                                    </video>
+                                    <a href={this.state.codeUrl} title="Click to see the code" style={{ position: "relative", left: "40%" }}>
+                                        <img src={GitHub} alt="GitHub logo" style={{ width: 70 }} />
+                                    </a>
+                                </td>
+                                <td>
+                                    <p className="project-title"><strong><u>{this.state.title}</u></strong></p>
+                                    <p className="project-explanation">{this.state.explanation}</p>
+                                </td>
+                            </tr>
+                        </table>
+                    )
+                }
         }
         else {
-            return (
-                <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
-                    <tr>
-                        <td>
-                            <p className="project-title"><strong><u>{this.state.title}</u></strong></p>
-                            <p className="project-explanation">{this.state.explanation}</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="project-td">
-                            <video controls className="project-video">
-                                <source src={this.state.videoUrl} type="video/mp4" />
-                            </video>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style={{ textAlign: "center", padding:"3%" }}>
+            if (this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'g==') {
+                return (
+                    <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
+                        <tr>
+                            <td>
+                                <p className="project-title"><strong><u>{this.state.title}</u></strong></p>
+                                <p className="project-explanation">{this.state.explanation}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="project-td">
+                                <a href="https://alonlerner.github.io/njit-trivia/">
+                                    <img src={this.state.videoUrl} height="160" style={{ padding: "2%" }} />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={{ textAlign: "center", padding: "3%" }}>
 
-                            <a href={this.state.codeUrl} title="Click to see the code"   >
-                                <img src={GitHub} alt="GitHub logo" width="70px" />
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            )
+                                <a href={this.state.codeUrl} title="Click to see the code"   >
+                                    <img src={GitHub} alt="GitHub logo" width="70px" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                )
+            }
+            else {
+                return (
+                    <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
+                        <tr>
+                            <td>
+                                <p className="project-title"><strong><u>{this.state.title}</u></strong></p>
+                                <p className="project-explanation">{this.state.explanation}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="project-td">
+                                <video controls className="project-video">
+                                    <source src={this.state.videoUrl} type="video/mp4" />
+                                </video>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style={{ textAlign: "center", padding: "3%" }}>
+
+                                <a href={this.state.codeUrl} title="Click to see the code"   >
+                                    <img src={GitHub} alt="GitHub logo" width="70px" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                )
+            }
         }
     }
 }
