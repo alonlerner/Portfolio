@@ -10,6 +10,7 @@ class Project extends React.Component {
             codeUrl : props.codeUrl,
             title : props.title,
             explanation: props.explanation,
+            picUrl: props.picUrl,
             mouseOver: false
         }
         this.handleMouseOver = this.handleMouseOver.bind(this)
@@ -63,12 +64,12 @@ class Project extends React.Component {
             styles.backgroundColor = "#262626"
         }
         if (window.innerWidth > 900) {
-            if (this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'g==') {
+            if (this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'g==' || this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'png') {
                 return (
                     <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
                         <tr>
                             <td className="project-td">
-                                <a href="https://alonlerner.github.io/njit-trivia/">
+                                <a href={this.state.picUrl} style={{ display: "block", marginLeft: "auto", marginRight:"auto",width:"95%" }}>
                                     <img src={this.state.videoUrl} height="180" style={{ padding: "2%" }} />
                                 </a>
                                 <a href={this.state.codeUrl} title="Click to see the code" style={{ position: "relative", left: "40%" }}>
@@ -104,7 +105,7 @@ class Project extends React.Component {
                 }
         }
         else {
-            if (this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'g==') {
+            if (this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'g==' || this.state.videoUrl.substring(this.state.videoUrl.length - 3).trim() === 'png') {
                 return (
                     <table style={styles} className="border-radiusImportant" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} >
                         <tr>
@@ -115,8 +116,8 @@ class Project extends React.Component {
                         </tr>
                         <tr>
                             <td className="project-td">
-                                <a href="https://alonlerner.github.io/njit-trivia/">
-                                    <img src={this.state.videoUrl} height="160" style={{ padding: "2%" }} />
+                                <a href={this.state.picUrl} >
+                                    <img src={this.state.videoUrl} height="160" style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: "76%" }} />
                                 </a>
                             </td>
                         </tr>

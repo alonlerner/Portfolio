@@ -3,8 +3,8 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\photos"
+    "\\src\\photos",
+    "\\src\\videos"
   ],
-  "SelectedNode": "\\src\\Project.js",
   "PreviewInSolutionExplorer": false
 }
