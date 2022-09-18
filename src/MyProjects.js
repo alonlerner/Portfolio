@@ -29,14 +29,14 @@ function MyProjects() {
                 picUrl="https://alonlerner.github.io/nba-trivia/"
             />
 
-            <br/>
+            {/* <br/>
             <Project
                 videoUrl={njitTrivia}
                 codeUrl="https://github.com/alonlerner/njit-trivia"
                 title="NJIT S&D Trivia Game"
                 explanation="This project is a trivia game about NJIT Swimming & Diving. The app was was built from scratch using react.js library. The app is using an API I developed by myself using lambda functions in AWS. The lambda functions connect to a MySQL database I own. All material I learned for this project is self taught."
                 picUrl="https://alonlerner.github.io/njit-trivia/"
-            />
+            /> */}
                 
             <br />
             <Project
@@ -56,7 +56,7 @@ function MyProjects() {
                 picUrl={null}
             />
 
-            <br/>
+            {/* <br/>
             <Project
                 videoUrl={HangMan}
                 codeUrl="https://github.com/alonlerner/CarBrandsHangman"
@@ -64,7 +64,7 @@ function MyProjects() {
                 explanation="This project is a car brands hangman game that was written from scratch in Python and is played in the Python console. The game combines material I studied in school and self taught."
                 picUrl={null}
             />
-            <br/>
+            <br/> */}
         </div>
     )
 }
